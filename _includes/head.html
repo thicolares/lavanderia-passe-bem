@@ -1,0 +1,71 @@
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46291927-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46291927-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}" />
+    {% if site.meta_author %}<meta name="author" content="{{ site.meta_author }}">{% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="https://bootswatch.com/3/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "assets/css/main.css" }}">
+
+    <!-- Google verification -->
+    {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+
+    <!-- Bing Verification -->
+    {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" }}">
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Search Engine -->
+    <meta name="description" content="8 e 9 de Junho, no Instituto de Matemática e Estatística da UFBA. O maior evento sobre metodologias ágeis e tecnologia
+     da Bahia">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="LinguÁgil 2018">
+    <meta itemprop="description" content="8 e 9 de Junho, no Instituto de Matemática e Estatística da UFBA. O maior evento sobre metodologias ágeis e tecnologia
+     da Bahia">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="LinguÁgil 2018">
+    <meta name="twitter:description" content="8 e 9 de Junho, no Instituto de Matemática e Estatística da UFBA. O maior evento sobre metodologias ágeis e tecnologia
+     da Bahia">
+    <meta name="twitter:site" content="@linguagil">
+    <meta name="twitter:creator" content="@linguagil">
+    <meta name="twitter:image:src" content="http://linguagil.com.br/assets/images/social/tw-linguagil.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="LinguÁgil 2018">
+    <meta name="og:description" content="8 e 9 de Junho, no Instituto de Matemática e Estatística da UFBA. O maior evento sobre metodologias ágeis e tecnologia
+     da Bahia">
+    <meta name="og:image" content="http://linguagil.com.br/assets/images/social/og-linguagil.png">
+    <meta name="og:url" content="http://linguagil.com.br">
+    <meta name="og:site_name" content="LinguÁgil 2018">
+    <meta name="og:locale" content="pt_BR">
+    <meta name="fb:admins" content="321936794521960">
+    <meta name="og:type" content="website">
+</head>

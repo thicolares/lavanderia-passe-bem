@@ -1,0 +1,35 @@
+
+<!-- Speakers Grid Section -->
+<section id="speakers">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Palestrantes</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            {% for speaker in site.data.speakers %}
+                {% if speaker.avatar != null and speaker.hideAvatar == null %}
+                    <div class="col-sm-4 speaker-item">
+                        <a href="#speakerModal-{{ speaker.ref }}" class="speaker-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="assets/images/speakers/{{ speaker.avatar }}" class="img-responsive" alt="{{ speaker.name }}">
+                            <h4>{{ speaker.name }}</h4>
+                            <h5>{{ speaker.company }}. {{ speaker.city }}</h5>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {% include enroll.html %}
+            </div>
+        </div>
+    </div>
+</section>
